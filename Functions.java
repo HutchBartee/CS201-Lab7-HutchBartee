@@ -24,11 +24,14 @@ public class Functions {
             String l;
             while ((l = br.readLine()) != null){
                 ArrayList<String> tempAL = new ArrayList<String>();
-                tempAL.add(l);
+                String[] split = l.split(",");
+                for(String s : split){
+                    tempAL.add(s);
+                }
+                tempAL.toArray();
                 PetArrayList.add(tempAL);
             }
             System.out.println(PetArrayList);
-
             br.close();
             errWriter.close();
 
@@ -38,5 +41,5 @@ public class Functions {
     }
 
     //other functions would go here:
-    //PRE:
+    //PRE: 
 }
