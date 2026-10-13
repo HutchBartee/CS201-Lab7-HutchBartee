@@ -29,7 +29,16 @@ public class Pet {
 
     // Getters and Setters
     public String getID() { return ID; }
-
+    public String getName() { return name; }
+    public String getDateTime() { return dateTime; }
+    public String getBirthDate() { return birthDate; }
+    public double getAgeAtDateTime() { return ageAtDateTime; }
+    public double getAgeCurrent() { return ageCurrent; }
+    public String getOutcomeType() { return outcomeType; }
+    public String getType() { return type; }
+    public String getSex() { return sex; }
+    public String getBreed() { return breed; }
+    public void printPetInfo(){}
 
     public void setAgeAtDateTime() {
         int[] birth = DateUtils.parseDate(birthDate);

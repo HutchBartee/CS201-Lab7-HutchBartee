@@ -20,7 +20,14 @@ public class Functions {
         try {
             BufferedReader br = new BufferedReader(new FileReader(filename));
             PrintWriter errWriter = new PrintWriter(new FileWriter(errorLog));
-        
+            ArrayList<ArrayList<String>> PetArrayList = new ArrayList<ArrayList<String>>();
+            String l;
+            while ((l = br.readLine()) != null){
+                ArrayList<String> tempAL = new ArrayList<String>();
+                tempAL.add(l);
+                PetArrayList.add(tempAL);
+            }
+            System.out.println(PetArrayList);
 
             br.close();
             errWriter.close();
@@ -31,4 +38,5 @@ public class Functions {
     }
 
     //other functions would go here:
+    //PRE:
 }

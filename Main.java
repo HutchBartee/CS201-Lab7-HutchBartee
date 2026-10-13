@@ -38,7 +38,6 @@ public class Main {
                 switch (choice) {
                         case "1":
                             try {
-
                             }
                             catch (InputMismatchException e){
                                 System.out.println("Invalid value was entered.");
